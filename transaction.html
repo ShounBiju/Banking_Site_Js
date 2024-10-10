@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+  <!-- JavaScript -->
+  <script src="./js/index.js" defer></script> <!-- Added 'defer' to load script after DOM is ready -->
+</head>
+<body>
+  <!-- Navigation Section -->
+  <section id="navigation-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <!-- Bank Name -->
+      <a class="navbar-brand protest-strike-regular" href="#">Bank of India <i class="fa-solid fa-money-check-dollar"></i></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#navigation-bar">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Hero">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Footer">Contact Us</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <!-- Login -->
+          <button class="btn btn-outline-primary mr-2" id="Login" onclick="document.location='./login.html'">Login</button>
+          <!-- Sign-Up -->
+          <button class="btn btn-primary" id="Signup" onclick="document.location='./signup.html'">Sign Up</button>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- Transaction -->
+  <section id="transaction">
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-header">
+              <h2>Deposit</h2>
+            </div>
+            <div class="card-body">
+              <div class="mb-3">
+                <label for="deposit-amount" class="form-label">Amount:</label>
+                <input type="text" class="form-control" id="deposit-amount" placeholder="Enter amount">
+              </div>
+              <button class="btn btn-success w-100" onclick="deposit()">Deposit</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-header">
+              <h2>Withdraw</h2>
+            </div>
+            <div class="card-body">
+              <div class="mb-3">
+                <label for="withdraw-amount" class="form-label">Amount:</label>
+                <input type="text" class="form-control" id="withdraw-amount" placeholder="Enter amount">
+              </div>
+              <button class="btn btn-danger w-100" onclick="withdraw()">Withdraw</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-header bg-info text-white">
+              <h2>Current Balance</h2>
+            </div>
+            <div class="card-body">
+              <h4 id="current-balance">Rs.<span id="balance-amount">0.00</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section id="Footer mt-5 pt-5">
+    <footer class="bg-dark text-white mt-5 pt-4 pb-2">
+      <div class="container">
+        <div class="row">
+          <!-- About Section -->
+          <div class="col-md-4">
+            <h5>About Us</h5>
+            <p>We are committed to providing reliable and secure banking services to help you manage your finances efficiently. Our mission is to deliver quality financial solutions tailored to your needs.</p>
+          </div>
+
+          <!-- Quick Links Section -->
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Home</a></li>
+              <li><a href="#" class="text-white">Services</a></li>
+              <li><a href="#" class="text-white">Contact Us</a></li>
+              <li><a href="#" class="text-white">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Section -->
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <p><i class="fas fa-map-marker-alt"></i> 1234 Bank Street, City Name, Country</p>
+            <p><i class="fas fa-phone"></i> +123 456 7890</p>
+            <p><i class="fas fa-envelope"></i> info@yourbank.com</p>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="row mt-4">
+          <div class="col text-center">
+            <p>&copy; 2024 Your Bank Name. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+</body>
+</html>

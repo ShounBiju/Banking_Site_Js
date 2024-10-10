@@ -1,0 +1,106 @@
+<!-- Bank App -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- java-script -->
+    <script src="./index.js"></script>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+ </head>
+ <body>
+    <!-- Navigation Section -->
+    <section id="navigation-bar">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <!-- Bank-Name -->
+            <a class="navbar-brand protest-strike-regular" href="#">Bank of India <i class="fa-solid fa-money-check-dollar"></i> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#navigation-bar">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Hero">About-Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Footer">Contact Us</a>
+                </li>
+              </ul>
+              <div class="d-flex">
+                <!-- Login -->
+                <button class="btn btn-outline-primary mr-2" id="Login" onclick="document.location='./login.html'">Login</button>
+                <!-- Sign-Up -->
+                <button class="btn btn-primary" id="Signup" onclick="document.location='./signup.html'">Sign Up</button>
+              </div>
+            </div>
+          </nav>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="Hero">
+        <div class="row justify-content-around">
+            <div class="col-4 mt-5 pt-5 d-flex">
+              <p class="text-justify mt-4 qwitcher-grypen-bold">Online banking has revolutionized the way people interact with their finances. It allows users to access a wide range of banking services from the comfort of their home, whether it’s checking account balances, transferring funds, or making payments. The convenience of being able to manage your money 24/7, without needing to visit a physical branch, makes financial tasks easier and more efficient. In addition, strong security measures like encryption and multi-factor authentication ensure that personal and financial data is well-protected. Mobile banking apps further enhance this convenience, allowing users to perform transactions on the go, ensuring flexibility and control over their financial activities at any time.</p> 
+            </div>
+            <div class="col-4 mt-5 pt-5 d-flex">
+              <img src="./hero_page.svg" alt="">
+            </div>
+          </div>
+    </section>
+
+    <!-- Footer Section -->
+     <section id="Footer mt-5 pt-5">
+        <footer class="bg-dark text-white mt-5 pt-4 pb-2">
+            <div class="container">
+              <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4">
+                  <h5>About Us</h5>
+                  <p>We are committed to providing reliable and secure banking services to help you manage your finances efficiently. Our mission is to deliver quality financial solutions tailored to your needs.</p>
+                </div>
+          
+                <!-- Quick Links Section -->
+                <div class="col-md-4">
+                  <h5>Quick Links</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Home</a></li>
+                    <li><a href="#" class="text-white">Services</a></li>
+                    <li><a href="#" class="text-white">Contact Us</a></li>
+                    <li><a href="#" class="text-white">Privacy Policy</a></li>
+                  </ul>
+                </div>
+          
+                <!-- Contact Section -->
+                <div class="col-md-4">
+                  <h5>Contact Us</h5>
+                  <p><i class="fas fa-map-marker-alt"></i> 1234 Bank Street, City Name, Country</p>
+                  <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                  <p><i class="fas fa-envelope"></i> info@yourbank.com</p>
+                </div>
+              </div>
+          
+              <!-- Footer Bottom -->
+              <div class="row mt-4">
+                <div class="col text-center">
+                  <p>&copy; 2024 Your Bank Name. All Rights Reserved.</p>
+                </div>
+              </div>
+            </div>
+          </footer>
+          
+     </section>
+ </body>
+ </html>
